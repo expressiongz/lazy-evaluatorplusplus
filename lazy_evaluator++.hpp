@@ -39,7 +39,6 @@ namespace util
 #endif
 	[[ nodiscard ]] std::vector< std::string_view > get_import_names( )
 	{
-		sizeof( LIST_ENTRY );
 #ifdef _M_X64
 		const auto peb = reinterpret_cast< PEB* >( __readgsqword( 0x60 ) );
 #else
